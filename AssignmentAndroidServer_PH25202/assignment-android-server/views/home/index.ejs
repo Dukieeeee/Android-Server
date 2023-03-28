@@ -1,0 +1,20 @@
+<%- include('../inc/top', {tieude: "Trang chủ" }) %>
+
+    <h1 style="margin: 20px;">Trang chủ</h1>
+    <div class="row">
+        <div class="bg-primary col-5"
+            style="border-radius: 10px; height: 400px; margin-top: 50px; text-align: center; padding: 140px;">
+            <a href="/user/list" style="text-decoration: none; color: white; font-size: 30px;">Người dùng</a>
+            <p>Admin: 2</p>
+            <p>User: 2</p>
+        </div>
+        <div class="col-2"> </div>
+
+        <div class="bg-info col-5"
+            style="border-radius: 10px; height: 400px; margin-top: 50px; text-align: center; padding: 140px;">
+            <a href="/sanpham/list" style="text-decoration: none; color: white; font-size: 30px;">Sản phẩm</a>
+            <p>Số sản phẩm: 3</p>
+            <p>Số sản phẩm còn hàng: 2</p>
+        </div>
+    </div>
+    <%- include('../inc/bottom') %>

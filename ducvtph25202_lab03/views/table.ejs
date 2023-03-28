@@ -1,0 +1,81 @@
+<%- include('../views/top', {tieude:"Danh sách"})  %>
+
+<div style="text-align: end; margin-right: 20px;">
+    <a class="btn btn-primary" href="/form">Add User</a>
+</div>
+<div class="lab1-table">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Fullname</th>
+            <th scope="col">Username</th>
+            <th scope="col">Email</th>
+            <th scope="col">Group</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Vi Thanh Đức</td>
+            <td>thanhduc719</td>
+            <td>thanhduc719@gmail.com</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Trịnh Thị Hoài Phương</td>
+            <td>duonglinhh2102</td>
+            <td>duonglinhh2102@gmail.com</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Lê Hoàng Minh Hà</td>
+            <td>leha0712</td>
+            <td>leha0712@gmail.com</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <th></th>
+            <th>Dữ liệu truyền từ controller</th>
+          </tr>
+          <tr>
+            <th scope="row"><%= id %></th>
+            <td><%= fullname %></td>
+            <td><%= username %></td>
+            <td><%= email %></td>
+            <td><%= group %></td>
+          </tr>
+          <tr>
+            <th scope="row"><%= id2 %></th>
+            <td><%= fullname2 %></td>
+            <td><%= username2 %></td>
+            <td><%= email2 %></td>
+            <td><%= group2 %></td>
+          </tr>
+          <tr>
+            <th scope="row"><%= id3 %></th>
+            <td><%= fullname3 %></td>
+            <td><%= username3 %></td>
+            <td><%= email3 %></td>
+            <td><%= group3 %></td>
+          </tr>
+          <tr>
+            <th scope="row"><%= id4 %></th>
+            <td><%= fullname4 %></td>
+            <td><%= username4 %></td>
+            <td><%= email4 %></td>
+            <td><%= group4 %></td>
+          </tr>
+          <tr>
+            <th scope="row"><%= id5 %></th>
+            <td><%= fullname5 %></td>
+            <td><%= username5 %></td>
+            <td><%= email5 %></td>
+            <td><%= group5 %></td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+<%- include('../views/bottom')  %>

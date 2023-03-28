@@ -1,0 +1,63 @@
+<%- include('../inc/top', {tieude: "Trang chủ"}) %>
+<div>
+    <h1 style="margin: 20px;">Danh sách sản phẩm</h1>
+</div>
+<div style="width: 400px; margin: 20px;">
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+  </div>
+<div style="text-align: end; margin: 20px;">
+    <a class="btn btn-primary" href="/sanpham/add">Thêm sản phẩm</a>
+</div>
+
+<div class="lab1-table">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Tên sản phẩm</th>
+            <th scope="col">Loại sản phẩm</th>
+            <th scope="col">Mô tả</th>
+            <th scope="col">Giá</th>
+            <th scope="col">Ảnh</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Bánh mì</td>
+            <td>Thực phẩm</td>
+            <td>Món ăn sáng</td>
+            <td>20000</td>
+            <td><img src="/public/images/banh-mi.jpg" style="width: 40px; height: 40px;"></td>
+            <td><a href="/sanpham/update" style="text-decoration: none;">Sửa</a></td>
+            <td><button>Xóa</button></td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Phở</td>
+            <td>Thực phẩm</td>
+            <td>Món ăn truyền thống</td>
+            <td>40000</td>
+            <td><img src="/image/pho.jpg" style="width: 40px; height: 40px;"></td>
+            <td><a href="/sanpham/update" style="text-decoration: none;">Sửa</a></td>
+            <td><button>Xóa</button></td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Bàn</td>
+            <td>Đồ gia dụng</td>
+            <td>Đồ gỗ gia dụng</td>
+            <td>200000</td>
+            <td><img src="/image/ban.jpg" style="width: 40px; height: 40px;"></td>
+            <td><a href="/sanpham/update" style="text-decoration: none;">Sửa</a></td>
+            <td><button>Xóa</button></td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+<%- include('../inc/bottom') %>

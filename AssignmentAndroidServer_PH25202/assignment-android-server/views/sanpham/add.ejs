@@ -1,0 +1,31 @@
+<%- include('../inc/top', {tieude: "Thêm sản phẩm"}) %>
+
+<div class="lab1-form-border">
+    <form>
+        <div class="mb-3">
+            <h1>Thêm sản phẩm</h1>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Tên sản phẩm</label>
+            <input class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Loại sản phẩm</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Mô tả</label>
+            <input class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Giá</label>
+            <input class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="formFile" class="form-label">Ảnh sản phẩm   </label>
+            <input class="form-control" type="file" id="formFile">
+          </div>
+        <button type="submit" class="btn btn-primary">Thêm sản phẩm </button>
+    </form>
+</div>
+<%- include('../inc/bottom') %>

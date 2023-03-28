@@ -1,0 +1,29 @@
+<%- include('../views/top', {tieude:"Form"})  %>
+
+<div class="lab1-form-border">
+    <form action="/form" method="post">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Fullname</label>
+            <input class="form-control" name="full">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Username</label>
+            <input class="form-control" name="user">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" name="pass">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="mail">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Group</label>
+            <input class="form-control" name="groupp">
+        </div>
+        <button type="submit" class="btn btn-primary">Save</button>
+    </form>
+</div>
+
+<%- include('../views/bottom')  %>
